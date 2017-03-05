@@ -35,8 +35,11 @@ public class login extends HttpServlet{
 		PrintWriter pw=resp.getWriter();
 		resp.setHeader("Access-Control-Allow-Origin", "*");
 		resp.setHeader("Access-Control-Request-Method", "POST");
-			BufferedReader bfr=req.getReader();
-			int lng=req.getContentLength();
+		resp.setContentType("application/json");
+			//BufferedReader bfr=req.getReader();
+		/*	int lng=req.getContentLength();
+			if(lng<=0){lng=5;}
+			
 			char[] msge=new char[lng];
 			bfr.read(msge, 0, lng);
 			JsonParser jp=new JsonParser();
@@ -50,8 +53,8 @@ public class login extends HttpServlet{
 			System.out.println("acc  "+jso.get("acc").getAsString());
 			System.out.println("pw   "+jso.get("pw").getAsString());
 			System.out.println("=======================================================================");
-			
-		
+			*/
+			System.out.println("asda");
 			HashMap<String,Object>rep=new HashMap<>();
 			rep.put("loginSuccess",true);
 			Gson gs=new Gson();

@@ -33,6 +33,7 @@ public class checkAcc extends HttpServlet implements doEvery {
 	public void doWhatever(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 		resp.setHeader("Access-Control-Allow-Origin", "*");
 		resp.setHeader("Access-Control-Request-Method", "POST");
+		resp.setContentType("application/json");
 		int lng=req.getContentLength();
 		char[] msg=new char[lng];
 		BufferedReader bfr= req.getReader();

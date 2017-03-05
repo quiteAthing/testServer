@@ -28,4 +28,46 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.wst.jsdt.core.jsNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>WebContent/_996_image</name>
+			<type>2</type>
+			<locationURI>PARENT-2-PROJECT_LOC/front_modulized/_996_image</locationURI>
+		</link>
+		<link>
+			<name>WebContent/_997_framework</name>
+			<type>2</type>
+			<locationURI>PARENT-2-PROJECT_LOC/front_modulized/_997_framework</locationURI>
+		</link>
+		<link>
+			<name>WebContent/_998_template</name>
+			<type>2</type>
+			<locationURI>PARENT-2-PROJECT_LOC/front_modulized/_998_template</locationURI>
+		</link>
+		<link>
+			<name>WebContent/_999_test</name>
+			<type>2</type>
+			<locationURI>PARENT-2-PROJECT_LOC/front_modulized/_999_test</locationURI>
+		</link>
+		<link>
+			<name>WebContent/images</name>
+			<type>2</type>
+			<locationURI>PARENT-2-PROJECT_LOC/front_modulized/images</locationURI>
+		</link>
+		<link>
+			<name>WebContent/index.html</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/front_modulized/index.html</locationURI>
+		</link>
+		<link>
+			<name>WebContent/member.html</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/front_modulized/member.html</locationURI>
+		</link>
+		<link>
+			<name>WebContent/_997_framework/js/initFB.js</name>
+			<type>1</type>
+			<location>C:/Users/PC-26/Desktop/initFB.js</location>
+		</link>
+	</linkedResources>
 </projectDescription>
