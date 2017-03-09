@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -12,6 +13,7 @@ import com.google.gson.JsonObject;
 
 import jamLazy.gdjson;
 
+@WebServlet("/mailbox")
 public class mailbox extends HttpServlet implements doEvery {
 
 	@Override
@@ -19,7 +21,7 @@ public class mailbox extends HttpServlet implements doEvery {
 			JsonObject jso=gdjson.getJsonObject(req.getReader()).getAsJsonObject();
 			String type=jso.get("servType").getAsString();
 			switch(type){
-				case "newMsg":break;
+				case "newMsg":sendRespNewMsg(resp);break;
 				case "getMsg":break;
 			}
 		
@@ -45,7 +47,10 @@ public class mailbox extends HttpServlet implements doEvery {
 			e.printStackTrace();
 		}
 		
-		
+	}
+	
+	
+	private void sendRespGetMsg(HttpServletResponse resp){
 		
 	}
 
